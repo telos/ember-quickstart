@@ -1,5 +1,10 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#bs-nav type="pills" justified=true as |nav|}}
+  {{#nav.item}}{{#nav.link-to "index"}}Home{{/nav.link-to}}{{/nav.item}}
+  {{#nav.item}}{{#nav.link-to "about"}}About{{/nav.link-to}}{{/nav.item}}
+  {{#nav.item}}{{#nav.link-to "services"}}Services{{/nav.link-to}}{{/nav.item}}
+  {{#nav.item}}{{#nav.link-to "contact"}}Contact{{/nav.link-to}}{{/nav.item}}
+{{/bs-nav}}
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div><!-- /.container -->
